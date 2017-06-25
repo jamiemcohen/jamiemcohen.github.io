@@ -1,1 +1,93 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="index.css" >
+    
+</head>
+<body>
+    <div class = "header">
+    <div class="custom-menu-wrapper">
+          <div class="pure-menu custom-menu custom-menu-top">
+              <a href="#" class="pure-menu-heading custom-menu-brand"><strong>JAMIE COHEN</strong></a>
+              <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+          </div>
+          <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
+              <div class="custom-menu-screen"></div>
+           
+              <ul class="pure-menu-list" >
+                  <li class="pure-menu-item"><button onclick="smoothScroll(document.getElementById('intro'))" id="nav-button" class="pure-menu-link"><i class="material-icons">home</i></button></li>
+                  <li  class="pure-menu-item"><button onclick="smoothScroll(document.getElementById('contact-intro'))" id="nav-button" class="pure-menu-link"> <i class="material-icons">message</i></button></li>
+                   <li class="pure-menu-item"><a href="/Resume.pdf" target="_blank"  class="pure-menu-link"><i class="material-icons">insert_drive_file</i></a></li>
+                  <li class="pure-menu-item"><a href="https://github.com/jamiemcohen"  target="_blank" class="pure-menu-link"><i class="material-icons">code</i></a></li>
+                  <li class="pure-menu-item"><a href="https://www.linkedin.com/in/jamie-m-cohen/"  target="_blank" class="pure-menu-link"><i class="material-icons">face</i></a></li>
+                  <li class="pure-menu-item"><a href="https://dribbble.com/james_co"  target="_blank" class="pure-menu-link"><i class="material-icons">&#xE3B7;</i></a></li>
+                 <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="material-icons">person_pin_circle</i></a></li>-->
+                
+              </ul>
+             
+          </div>
+      </div>
+</div> 
+<div class="pure-g">
+    <div class="pure-u-1-1" id="giphy-intro">
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/yoJC2A59OCZHs1LXvW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+    </div>
+</div>
+    <div class="pure-u-1-1" id="intro">
+        <div class = "intro-text">
+            <h1>Hello! I'm Jamie</h1> 
+            <h2>I just graduated from Vanderbilt University with  B.S. in Computer Science</h2>
+            <h3>I'm currently looking for a full-time gig, so if you like what you see </h3>
+            <button class = "pure-button" id ="contact-button" onclick="smoothScroll(document.getElementById('contact-intro'))">Contact Me</button>
+        </div>
+    </div>
+</div>
+<div class="pure-g">
+    <div class="pure-u-1-1" id="resume-intro">
+     <div class = "intro-text">
+        <h1>You'd probably like to see my resume</h1> 
+        <button class = "pure-button" id ="contact-button" onclick="location.href='/resume.pdf' ">Check it Out</button>
+        </div>
+    </div>
+</div>
+<div class="pure-g">
+    <div class="pure-u-1-1" id="code-intro">
+        <div class = "intro-text">
+            <h1>...And some of my projects</h1> 
+            <button class = "pure-button" id ="contact-button"  onclick="location.href='https://github.com/jamiemcohen' " >Github</button>
+        </div>
+    </div>      
+</div>   
+ <!--
+    <div class="pure-g">
+    <div class="pure-u-1-1" id="map-intro"></div>
+</div>
+-->
+<div class="pure-g">
+    <div class="pure-u-1-1" id="design-intro">
+        <div class = "intro-text">
+            <h1>I also dabble in some design work</h1> 
+            <button class = "pure-button" id ="contact-button"  onclick="location.href='https://dribbble.com/james_co' " >Dribbble</button>
+        </div>
+    
+    </div>
+</div>    
+
+<div class="pure-g">
+    <div class="pure-u-1-1" id="contact-intro">
+      <div class = "intro-text">
+            <h1>Let's get in touch!</h1> 
+            <button class = "pure-button" id ="contact-button"  onclick="location.href='mailto:jamiecohen95@gmail.com?Subject=Hello!'" >Email Me</button>
+        </div>
+    </div>
+</div>    
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
